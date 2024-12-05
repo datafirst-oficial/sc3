@@ -20,8 +20,9 @@ export default function Page() {
             </div>
           </div>
         </Section>
-        <Section classNameS="bg-2 py-24 sm:py-56 px-4">
-          <div className="w-full sm:grid sm:grid-cols-2">
+        <Section classNameS="relative bg-2 py-16 sm:py-56 px-4">
+          <div className="absolute top-0 w-full h-full sm:hidden bg-black/60"></div>
+          <div className="w-full sm:grid sm:grid-cols-2 z-50">
             <div className="flex flex-col gap-4 text-white">
               <h4 className="text-3xl font-bold">O que é o SC3®?</h4>
               <p>Eu já tentei utilizar dezenas de estratégias para escalar a minha agência de viagens. Algumas deram muito errado, já outras… mudaram o meu jogo pra sempre.</p>
@@ -58,8 +59,8 @@ export default function Page() {
         </Section>
         <Section classNameS="relative bg-[#00061c] py-16 sm:py-24 overflow-hidden px-4">
           <div className="z-50 flex flex-col items-center gap-12 text-center">
-            <div className="text-white">
-              <h4 className="text-2xl sm:text-4xl font-bold">Essas são as 6 alavancas do SC3®:</h4>
+            <div className="text-white flex flex-col gap-4">
+              <h4 className="text-3xl sm:text-4xl font-bold">Essas são as 6 alavancas do SC3®:</h4>
               <p>(Tome cuidado ao puxá-las. Apenas uma tem o poder de dobrar o seu faturamento.)</p>
             </div>
             <div className="w-full">
@@ -72,7 +73,7 @@ export default function Page() {
         <Section classNameS="bg-3 py-16 sm:py-24 bg-black px-4">
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col gap-4 text-center text-white max-w-2xl">
-              <h4 className="text-2xl sm:text-4xl font-bold">Sorte? Eu acho que não é possível…</h4>
+              <h4 className="text-3xl sm:text-4xl font-bold">Sorte? Eu acho que não é possível…</h4>
               <p className="sm:text-lg font-semibold">Quando eu falo que adicionei R$ 1.021.050,48 de faturamento na minha agência de viagens em apenas 77 dias, alguns podem pensar:</p>
               <p className="sm:text-lg font-semibold">“Sorte.”</p>
               <p className="sm:text-lg font-semibold">Eu também pensaria, se eu não tivesse tido visto esses resultados, implementando exatamente o mesmo sistema na agência deles:</p>
@@ -85,7 +86,7 @@ export default function Page() {
         </Section>
         <Section classNameS="py-16 sm:py-24 bg-[#00061c] px-4">
           <div className="flex flex-col items-center gap-4 sm:gap-8">
-            <h4 className="text-xl sm:text-4xl text-white text-center font-bold">Tudo que você precisa para <span className="text-[#3a65fc]">escalar a sua agência</span> com <span className="text-[#3a65fc]">previsibilidade e comercial de alta conversão, vendendo para desconhecidos</span> todos os dias estará no SC3 Scale.</h4>
+            <h4 className="text-xl sm:text-4xl text-white text-center font-bold">Tudo que você precisa para <span className="text-blue-400">escalar a sua agência</span> com <span className="text-blue-400">previsibilidade e comercial de alta conversão, vendendo para desconhecidos</span> todos os dias estará no SC3 Scale.</h4>
             <div className="flex items-start justify-start gap-6">
               <Cards3 />
             </div>
@@ -94,7 +95,7 @@ export default function Page() {
         </Section>
         <Section classNameS="py-16 sm:py-24 bg-[#00061c] px-4">
           <div className="flex flex-col items-center gap-8">
-            <h4 className="sm:max-w-3xl text-2xl sm:text-4xl text-white text-center font-bold"><span className="text-[#3a65fc]">Nem você vai reconhecer a sua agência de viagens</span> depois desses 4 dias.</h4>
+            <h4 className="sm:max-w-3xl text-2xl sm:text-4xl text-white text-center font-bold"><span className="text-blue-400">Nem você vai reconhecer a sua agência de viagens</span> depois desses 4 dias.</h4>
             <div className="flex items-start justify-start gap-6">
               <Cards4 />
             </div>
@@ -105,13 +106,13 @@ export default function Page() {
           <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 items-center">
             <div className="flex flex-col gap-8">
               <h4 className="text-2xl sm:text-4xl text-white font-bold">Além dos 4 dias imersivos, o <span className="text-[#999b9a]">Ingresso Silver</span> te dará acesso a:</h4>
-              <ul className="text-white flex flex-col gap-4 sm:max-w-lg text-lg">
+              <ul className="text-white flex flex-col gap-4 sm:max-w-lg sm:text-lg">
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-green-400" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-zinc-400" />
                   <p><strong>GRAVAÇÃO DO EVENTO POR 30 DIAS</strong>: Para ver e rever as aulas quantas vezes quiser e pegar novos insights de escala durante 1 mês inteiro.</p>
                 </li>
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-green-400" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-zinc-400" />
                   <p><strong>APOSTILA DIGITAL</strong>: Material de apoio com resumo das aulas e do método para você saber EXATAMENTE o que fazer.</p>
                 </li>
               </ul>
@@ -130,29 +131,29 @@ export default function Page() {
           <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 items-center">
             <div className="flex flex-col gap-8">
               <h4 className="text-2xl sm:text-4xl text-white font-bold">E se você quiser receber AINDA MAIS, pode adquirir o <span className="text-[#ffaf22]">Ingresso Gold</span>.</h4>
-              <ul className="text-white flex flex-col gap-4 sm:max-w-lg text-lg">
+              <ul className="text-white flex flex-col gap-4 sm:max-w-lg sm:text-lg">
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-[#ffaf22]" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-[#ffaf22]" />
                   <p><strong>GRAVAÇÃO DO EVENTO POR 30 DIAS:</strong> Para ver e rever as aulas quantas vezes quiser e pegar novos insights de escala durante 1 mês inteiro.</p>
                 </li>
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-[#ffaf22]" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-[#ffaf22]" />
                   <p>APOSTILA DIGITAL: Material de apoio com resumo das aulas e do método para você saber EXATAMENTE o que fazer.</p>
                 </li>
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-[#ffaf22]" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-[#ffaf22]" />
                   <p><strong>ACESSO EXTENDIDO: 12 MESES</strong> Com o Ingresso Gold, você vai ter 1 ano inteiro de acesso à gravação do evento.</p>
                 </li>
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-[#ffaf22]" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-[#ffaf22]" />
                   <p><strong>SCRIPTS AGÊNCIA 7D</strong> Scripts que já geraram milhões de reais em vendas de passagens aéreas para você copiar e colar.</p>
                 </li>
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-[#ffaf22]" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-[#ffaf22]" />
                   <p><strong>MINICURSO GRAVADO: TÁTICAS DE VENDAS</strong> Scripts que já geraram milhões de reais em vendas de passagens aéreas para você copiar e colar.</p>
                 </li>
                 <li className="relative flex flex-col sm:flex-row items-start sm:ps-12">
-                  <CheckCircleIcon className="sm:absolute left-0 top-1 h-10 w-10 text-[#ffaf22]" />
+                  <CheckCircleIcon className="sm:absolute left-0 top-1 w-6 h-6 sm:h-10 sm:w-10 text-[#ffaf22]" />
                   <p><strong>CONSULTOR DE ESCALA</strong> Um consultor exclusivo estará te acompanhando durante os 4 dias de evento.</p>
                 </li>
               </ul>
@@ -167,12 +168,12 @@ export default function Page() {
             </div>
           </div>
         </Section>
-        <Section classNameS="py-24 bg-gradient-to-r from-[#0076fe] to-[#172b84] px-4" id="preco">
+        <Section classNameS="py-16 sm:py-24 bg-gradient-to-r from-[#0076fe] to-[#172b84] px-4" id="preco">
           <div className="flex flex-col items-center gap-4">
             <div className="flex flex-col gap-8">
-              <h4 className=" text-2xl sm:text-4xl max-w-3xl text-white font-bold text-center">Tudo isso por um investimento mínimo (que vai te dar resultados máximos):</h4>
+              <h4 className=" text-3xl sm:text-4xl max-w-3xl text-white font-bold text-center">Tudo isso por um investimento mínimo (que vai te dar resultados máximos):</h4>
             </div>
-            <div className="sm:mt-0 mt-8">
+            <div className="sm:mt-0 mt-0">
               <Cards5 />
             </div>
           </div>
@@ -193,8 +194,9 @@ export default function Page() {
             </div>
           </div>
         </Section>
-        <Section classNameS="bg-5 py-24 sm:py-56 px-4">
-          <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 items-center">
+        <Section classNameS="bg-5 py-16 sm:py-56 px-4 relative">
+          <div className="absolute top-0 w-full h-full sm:hidden bg-black/60"></div>
+          <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 items-center z-50">
             <div className="flex flex-col gap-4 text-left text-white text-lg max-w-xl">
               <h4 className=" text-2xl sm:text-4xl text-white font-bold">Muito prazer, Arthur Pasetti.</h4>
               <p>Sou empresário, fundador da Pasetti Viagens, estrategista de funis de vendas e especialista em escala para agências de viagens.</p>
@@ -203,9 +205,9 @@ export default function Page() {
             </div>
           </div>
         </Section>
-        <Section classNameS="bg-black py-12">
+        <Section classNameS="bg-black py-12 px-4">
           <div className="flex flex-col items-center gap-8  text-center max-w-xl">
-            <h4 className=" text-2xl sm:text-4xl text-white font-bold">Ainda ficou com alguma dúvida ou precisa de ajuda?</h4>
+            <h4 className=" text-3xl sm:text-4xl text-white font-bold">Ainda ficou com alguma dúvida ou precisa de ajuda?</h4>
             <Link href="https://api.whatsapp.com/send/?phone=558393118012&text&type=phone_number&app_absent=0" className="rounded bg-gradient-to-b from-green-400 to-green-600 text-lg uppercase py-4 px-6">Falar com suporte</Link>
           </div>
         </Section>
